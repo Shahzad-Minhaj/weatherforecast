@@ -1,0 +1,202 @@
+.container{
+    min-height: 531px;
+}
+input{
+    width: 50%;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 15px;
+
+    margin-bottom: 15px;
+}
+
+/* Styling for button */
+button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    ;
+}
+.details, .moreDetails, .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    
+}
+
+/* .icons{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+} */
+.mainfile{
+    text-align: center;
+}
+div{
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+.box{
+    background-color: #E5E5E5;
+    padding: 15px;
+    width: 20%;
+    height: 30px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+img{
+    width: 10%;
+    height: 10%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Add this media query at the end of your CSS file */
+
+@media only screen and (max-width: 600px) {
+    .details, .moreDetails, .icons {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .box {
+        width: 20%; /* Adjust the width according to your preference */
+        margin-bottom: 10px; /* Add some space between the boxes */
+    }
+
+    @media only screen and (max-width: 525px) {
+        .box {
+            width: 15%; /
+            height: 30px;
+            font-size: 11px;
+            padding-top: 20px;
+
+        }
+    }
+    @media only screen and (max-width: 300px) {
+        .box {
+            width: 15%; /* Adjust the width for smaller screens */
+            height: 25px;
+            font-size: 11px;
+            padding-top: 20px;
+        }
+    }
+    @media only screen and (max-width: 199px) {
+        .box {
+
+            background-color: transparent;
+            font-size: 8px;
+
+        }
+        .icons{
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+
+
+/* FOOTER DESIGN */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info,
+  .social-links,
+  .footer-links {
+    flex: 1;
+    margin: 10px;
+  }
+  .contact-info a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+  }
+  .contact-info p:nth-last-child(1):hover,p:nth-last-child(2):hover{
+    /* text-decoration: underline; */
+    outline-offset: 3px;
+    transition: all 0.3s;
+    transform: scale(1.2);
+
+    
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .social-links a {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+  }
+  
+  .copyright p {
+    font-size: 14px;
+    color: #ccc;
+  }
+  .social-media-button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    outline: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex; /* Add this line */
+    justify-content: center; /* Add this line */
+    align-items: center; /* Add this line */
+}
+
+.social-media-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.social-media-button:hover {
+    outline-offset: 3px;
+    transition: all 0.3s;
+}
+
+.social-media-button:hover:nth-child(2) {
+    background-color: blue;
+}
